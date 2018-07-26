@@ -1,0 +1,35 @@
+{
+    "name": "lzy/test-composer",
+    "description": "test composer",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "Jose\\MyZip\\": "app/ThirdParty/MyZip"
+        },
+        "files":[
+            "app/common/function.php"
+        ],
+        "classmap":[
+            "app/Class/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Example\\Test\\": "test/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    ]
+}
