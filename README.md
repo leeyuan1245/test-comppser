@@ -4,7 +4,7 @@
 整个项目里composer使用得当，除了入口文件引入require './vender/outuload.php'外，是不应该在项目其他地方出现require或者include引入文件。
 
 配置参考：https://docs.phpcomposer.com/04-schema.html
-
+···
 {
     "name": "lzy/test-composer",        //项目的名称，格式：“机构/项目名称”
     "description": "test composer",     //项目介绍
@@ -40,7 +40,7 @@
         }
     ]
 }
-
+···
 
 其中，关于repositories使用说明：
 repositories支持以下类型的包资源库：
@@ -50,7 +50,7 @@ repositories支持以下类型的包资源库：
     pear: 从 pear 获取资源。
     package: 如果你依赖于一个项目，它不提供任何对 composer 的支持，你就可以使用这种类型。你基本上就只需要内联一个 composer.json 对象。
 实例：
-
+···
 {
     "repositories": [
         {
@@ -92,5 +92,5 @@ repositories支持以下类型的包资源库：
         }
     ]
 }
-
+···
     注意： 顺序是非常重要的，当 Composer 查找资源包时，它会按照顺序进行。默认情况下 Packagist 是最后加入的，因此自定义设置将可以覆盖 Packagist 上的包。
