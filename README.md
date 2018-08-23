@@ -1,4 +1,4 @@
-# test-comppser
+# test-composer
 ##测试composer使用方法
 
 整个项目里composer使用得当，除了入口文件引入require './vender/outuload.php'外，是不应该在项目其他地方出现require或者include引入文件。
